@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="t-zone">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Satuday, 21 April
+                </div>
+
+                <div class="extra-info" id="extra-info">
+                    <div class="weather-item">
+                        <div>Humidity</div>
+                        <div>95.2%</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Pressure</div>
+                        <div>121</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Wind Speed</div>
+                        <div>222</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-zone-container">
+                <div class="time-zone" id="time-zone">
+                    Asia/Kolkata
+                    <!-- <div class="country" id="country">IN</div> -->
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <div class="forecast">
+
+        <div class="temp f-temp" id="temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+            <div class="f-other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-details">
+                <div class="day">Tuesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="day">Wednesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="day">Thursday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="day">Friday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="day">Saturday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="day">Sunday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="icon">
+                <div class="temp">Night - 25.5,&#176 C</div>
+                <div class="temp">Day - 35.5,&#176 C</div>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./index.js"></script>
+
+
+</body>
+</html>

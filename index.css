@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(./Images/main-images1.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    font-family:'Red Hat Display', sans-serif;
+}
+
+/* css for container */
+
+.container{
+    padding: 20px 70px;
+    color: black;
+}
+
+.container-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container{
+    font-weight: 200;
+}
+
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container #t-zone{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.date-container .date{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.time-zone-container{
+    text-align: end;
+}
+
+.time-zone-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.time-zone-container .country{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.container-info .extra-info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(24,24,27,0.7);
+    color: whitesmoke;
+    margin: 10px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.container-info .extra-info .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* css for forecast */
+
+
+.forecast{
+    width: 100%;
+    height: 40vh;
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(24,24,27,0.8);
+   
+}
+.forecast .weather-forecast{
+    display: flex;
+}
+
+.forecast .f-temp{
+    font-size: 20px;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.forecast .temp .day{
+    padding: 5px 15px;
+    background:#3c3c44 ;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.forecast .weather-forecast{
+    display: flex;
+}
+
+.f-temp .f-temp .f-other{
+    padding: 5px;
+}
+
+.weather-forecast .weather-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.weather-forecast .weather-details .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.weather-forecast .weather-details .temp{
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width:730px) {
+
+    .container{
+        padding: 20px;
+    }
+    
+    .forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+
+    .forecast .f-temp{
+        font-size: 23px;
+    }
+
+    .date-container .time{
+        font-size: 50px;
+    }
+
+    .date-container #t-zone{
+        font-size: 20px;
+    }
+
+    .date-container .date{
+        font-size: 20px;
+    }
+
+    .container-info{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .time-zone-container .time-zone{
+        font-size: 20px;
+    }
+
+    .container-info .extra-info{
+        font-size: 20px;
+    }
+
+    .container-info .extra-info .weather-item{
+        font-size: 14px;
+    }
+
+}
